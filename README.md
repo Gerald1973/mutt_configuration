@@ -24,8 +24,8 @@ Eh bien ensuite, il faut le configurer, et là, ça prend du temps, mais néanmo
 La première configuration brute, m’a créé des répertoires IMAP en double, en effet, Google crée des répertoires Imap différents selon la langue utilisée bin -> corbeille, draft -> brouillon, …  
 J’ai donc adapté ma configuration, aux répertoires en français. Ensuite, je me suis dit que ce serait mieux avec une barre latérale droite comme l’original et après lecture de la documentation, il s’avère qu’il y en a une mais qui n’est pas active par défaut, alors je l’ai activée, j’ai également configuré les touches suivantes pour y naviguer :
 
->Ctrl + flèche gauche : ouvre ou ferme la barre de menu latérale  
-Ctrl + flèche haut : on se déplace dans la boite mail du dessus.  
+>Ctrl + flèche gauche : ouvre où ferme la barre de menu latérale  
+Ctrl + flèche haut : on se déplace dans la boîte mail du dessus.  
 Ctrl + flèche basse : on se déplace dans la boîte mail du dessous.  
 Ctrl + flèche droite : ouverture de la boîte mail sélectionnée.  
 
