@@ -1,0 +1,71 @@
+# A basic .muttrc for use with Gmail
+
+# Change the following six lines to match your Gmail account details
+set imap_user = "@userName@gmail.com"
+set imap_pass = "@password"
+set smtp_url = "smtp://@userName@smtp.gmail.com:587/"
+set smtp_pass = "@password"
+set from = "@userName@gmail.com"
+set realname = "@realName"
+
+# Change the following line to a different editor you prefer.
+set editor = "nano"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 5
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+[Gmail]/Brouillons"
+#Statistic
+#Fetch the number of items by mailbox.
+set mail_check_stats = yes
+set mail_check_stats_interval = 5
+#index format with time date %H:%M:%S %d/%m/%Y
+# 15:05:30 10/05/2021
+set index_format = "%4C %Z %{%H:%M:%S %d/%m/%Y} %-15.15L (%?l?%4l&%4c?) %s"
+#SideBar Format
+set sidebar_width = 40
+set sidebar_format = "%B%* %n %5N(%5S)"
+#Sidebar key binding
+#Control arrow up select mailbox above
+#Control arrow down select mailbox under
+#Control arrow right open selected mailbox
+bind index,pager <C-Up> sidebar-prev
+bind index,pager <C-Down> sidebar-next
+bind index,pager <C-Right> sidebar-open
+#Automaticallly managed  by GMail.
+#set record = "+[Gmail]/Messages envoyés"
+set trash ="+[Gmail]/Corbeille"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set move = no
+set sidebar_visible = yes
+set include
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+set auto_tag = yes
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+alternative_order text/plain text/html *
+auto_view text/html
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind editor <space> noop
+
+# Gmail-style keyboard shortcuts
+macro index,pager y "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
+macro index,pager d "<enter-command>set trash=\"imaps://imap.googlemail.com/[Gmail]/Corbeille\"\n\
+<delete-message>" "Gmail delete message"
+macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index,pager ga "<change-folder>=[Gmail]/Tous les messages<enter>" "Go to all mail"
+macro index,pager gs "<change-folder>=[Gmail]/Suivis<enter>" "Go to starred messages"
+macro index,pager gd "<change-folder>=[Gmail]/Brouillons<enter>" "Go to drafts"
+
+#end-----------------------------------------
