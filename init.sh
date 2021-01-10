@@ -1,6 +1,6 @@
 #!/bin/bash
-printf 'Replacment of the variables concerning the user name and the password in the mutt configuration file.\n'
-printf '=====================================================================================================\n'
+printf 'Replacement of the variables concerning the user data in the mutt configuration file.\n'
+printf '=====================================================================================\n'
 printf 'User name :\n'
 read userName
 printf 'Password :\n'

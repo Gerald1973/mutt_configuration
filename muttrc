@@ -34,9 +34,11 @@ set sidebar_format = "%B%* %n %5N(%5S)"
 #Control arrow up select mailbox above
 #Control arrow down select mailbox under
 #Control arrow right open selected mailbox
+#Control arrow left toggle the sidebar
 bind index,pager <C-Up> sidebar-prev
 bind index,pager <C-Down> sidebar-next
 bind index,pager <C-Right> sidebar-open
+bind index,pager <C-Left> sidebar-toggle-visible
 #Automaticallly managed  by GMail.
 #set record = "+[Gmail]/Messages envoyés"
 set trash ="+[Gmail]/Corbeille"
