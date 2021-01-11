@@ -49,7 +49,7 @@ Des centaines de types mimes sont déjà supportés et configurés, dans le fich
 
 ## Note
 
-To avoid some problems on Raspberry Pi to see the html in the browser, run the folowing command to
+To avoid some problems on Raspberry Pi to see the html in the browser, run the following command to
 install some missing fonts. Because Chromium will generate the html in the directory /tmp and open it
 in the browser.
 
