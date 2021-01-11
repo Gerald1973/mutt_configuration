@@ -17,7 +17,8 @@ set spoolfile = "+INBOX"
 set imap_check_subscribed
 set hostname = gmail.com
 set mail_check = 5
-set timeout = 300
+#Polling on gmail inbox.
+set timeout = 10
 set imap_keepalive = 300
 set postponed = "+[Gmail]/Brouillons"
 #Statistic
