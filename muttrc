@@ -9,7 +9,7 @@ set from = "@userName@gmail.com"
 set realname = "@realName"
 
 # Change the following line to a different editor you prefer.
-set editor = "nano"
+set editor = "emacs"
 
 # Basic config, you can leave this as is
 set folder = "imaps://imap.gmail.com:993"
