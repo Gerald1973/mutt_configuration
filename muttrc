@@ -62,3 +62,5 @@ bind editor <Tab> complete-query
 bind editor ^T complete
 bind editor <space> noop
 #end-----------------------------------------
+source ~/.mail_aliases
+set alias_file=~/.mail_aliases

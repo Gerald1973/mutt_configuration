@@ -17,4 +17,8 @@ if [ $? = 0 ]; then
             printf 'Operation successful.\n'
         fi
     fi
+    if [ ! -e ~/.mail_aliases ]; then
+        touch ~/.mail_aliases
+        printf 'A file .mail_aliases has been created.\n'
+    fi
 fi
